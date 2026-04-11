@@ -99,7 +99,7 @@ namespace dataAPI.Controllers
                     client.Headers.Add("Accept-Language", "en-US,en;q=0.5");
                     client.Headers.Add("User-Agent", "Mozilla/ 5.0(Windows NT 10.0; Win64; x64; rv: 79.0) Gecko/20100101 Firefox/79.0");
 
-                    Console.WriteLine(client.DownloadString("/api/account/getprice/"));
+                    client.DownloadString("/api/account/getprice/");
                 }
 
 
