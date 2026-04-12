@@ -656,7 +656,7 @@ namespace dataAPI.Controllers
                         item.contract = t.contract;
                         item.UTCDate = t.UTCDate;
 
-                        //assiging reversly
+                        //assigning reversely
                         t.method = item.method;
                     }
 
@@ -793,7 +793,7 @@ namespace dataAPI.Controllers
                             item.contract = t.contract;
                             item.UTCDate = t.UTCDate;
 
-                            //asssigning reversly
+                            //assigning reversely
                             t.method = item.method;
                         }
 
