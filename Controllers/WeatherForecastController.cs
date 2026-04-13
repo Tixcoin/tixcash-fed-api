@@ -492,7 +492,7 @@ namespace dataAPI.Controllers
             catch (Exception ex)
             {
             }
-            return new { }; ;
+            return new { };
             //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
@@ -513,7 +513,7 @@ namespace dataAPI.Controllers
             catch (Exception ex)
             {
             }
-            return new { }; ;
+            return new { };
             //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
