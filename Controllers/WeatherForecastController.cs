@@ -410,7 +410,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "ReadContract failed");
             }
 
             return false;
