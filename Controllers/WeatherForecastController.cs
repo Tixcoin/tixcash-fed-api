@@ -469,7 +469,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "SubmitContractVerify failed");
             }
 
             return false;
