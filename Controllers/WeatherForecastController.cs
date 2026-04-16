@@ -983,7 +983,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "Register failed");
                 return "Registration failed.";
             }
         }
