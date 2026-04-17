@@ -1009,7 +1009,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "Login failed");
             }
 
             return "Login failed.";
@@ -1052,7 +1052,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "AuthAddApiKey failed");
             }
 
             return "failed to generate.";
@@ -1081,7 +1081,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "AuthUpdatePass failed");
             }
 
             return "failed to update.";
@@ -1119,7 +1119,7 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
-                var m = ex.Message;
+                _logger.LogError(ex, "AuthAddFavAddress failed");
             }
 
             return "failed to update.";
