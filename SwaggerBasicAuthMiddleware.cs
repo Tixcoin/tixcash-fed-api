@@ -37,9 +37,6 @@ namespace dataAPI
         public bool IsAuthorized(string username, string password)
         {
             return true;
-            var dt = _du.GetDataTable("SELECT TOP 1 1 FROM [dbo].[LoginNow] Where ([emailid]='" + username + "' OR [mobile]='" + username + "') AND DATEDIFF(minute,[expiredon],[createdon]) > 0 ");
-
-            return dt.Rows.Count > 0;
         }
     }
 }
