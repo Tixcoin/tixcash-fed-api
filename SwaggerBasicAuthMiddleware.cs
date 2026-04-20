@@ -7,12 +7,10 @@ namespace dataAPI
     {
         private readonly RequestDelegate next;
         private readonly IConfiguration config;
-        private readonly DataUtility _du;
         public SwaggerBasicAuthMiddleware(RequestDelegate next, IConfiguration config)
         {
             this.next = next;
             this.config = config;
-            _du = new DataUtility((string)this.config["ConnectionString"]);
         }
         public async Task InvokeAsync(HttpContext context)
         {
