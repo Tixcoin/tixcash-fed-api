@@ -812,8 +812,9 @@ namespace dataAPI.Controllers
                 };
             }
             catch (Exception ex)
-            { return new { ex = ex }; }
-            return new { };
+            {
+                return new { ex = ex };
+            }
         }
 
         private long GetDecimals(Wallet.WalletClient wallet, byte[] contractAddressBytes)
