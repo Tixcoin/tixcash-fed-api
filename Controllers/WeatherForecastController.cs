@@ -107,20 +107,6 @@ namespace dataAPI.Controllers
                 webClient.Headers.Add("User-Agent", "PostmanRuntime/7.26.1");
                 //webClient.Headers.Add("user-agent", " Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
                 var stream = webClient.DownloadData(URI);
-                //using (StreamReader sr = new StreamReader(stream))
-                //{
-                //    //This allows you to do one Read operation.
-                //    String request = sr.ReadToEnd();
-                //}
-
-
-
-                // WebClient wc = new WebClient();
-
-                //   wc.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
-                // string HtmlResult = wc.DownloadString("https://txhapi.tixcash.org/api/account/getprice").Result;
-
-
 
             }
             catch (WebException ex)
