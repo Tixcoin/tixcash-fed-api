@@ -295,13 +295,6 @@ namespace dataAPI.Controllers
                 var GetAccountResource = Task.Run(async () => await wallet.GetAccountResourceAsync(new Account() { Address = addressBytes })).Result;
 
 
-                //Asset
-                //var GetAssetIssueListAsync = Task.Run(async () => await wallet.GetAssetIssueListAsync(new EmptyMessage()));
-                //var GetAssetIssueByAccountAsync = Task.Run(async () => await wallet.GetAssetIssueByAccountAsync(new Account() { Address = addressBytes }));
-                //var GetAssetIssueListByName = Task.Run(async () => await wallet.GetAssetIssueByNameAsync(new BytesMessage() { Value = ByteString.CopyFrom(Encoding.ASCII.GetBytes("ABC")) })).Result;
-                //var GetAssetIssueListByNameAsync2 = Task.Run(async () => await soliditywallet.GetAssetIssueListByNameAsync(new BytesMessage() { Value = ByteString.CopyFrom(Encoding.ASCII.GetBytes("ABC")) }));
-                //var GetAssetIssueListByName2 = Task.Run(async () => await soliditywallet.GetAssetIssueByNameAsync(new BytesMessage() { Value = ByteString.CopyFrom(Encoding.ASCII.GetBytes("ABC")) })).Result;
-
                 var qry = "SELECT [isVerified],[code],[optimization],[runs],[license],[version] FROM  [Explorer_BLOCKS].[dbo].[Contracts]  WHERE account='" + add + "' ";
                 var dt = _du.GetDataTable(qry);
                 Int32 isverfied = 0;
