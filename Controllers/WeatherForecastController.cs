@@ -207,23 +207,6 @@ namespace dataAPI.Controllers
             {
                 var dt = _du.GetDataTable("EXEC [Explorer_BLOCKS].[dbo].[sp_GetAccountsByPageGroup] " + page);
 
-                //var wallet = _walletClient.GetProtocol();
-                //var soliditywallet = _walletClient.GetSolidityProtocol();
-
-                //dynamic result = JsonConvert.DeserializeObject<object[]>(dt.Rows[0].ItemArray[2].ToString());
-
-                //foreach (dynamic o in result)
-                //{
-                //    var GetAccount = Task.Run(async () => await wallet.GetAccountAsync(new Account() { Address = _walletClient.ParseAddress(Convert.ToString(o.account)) })).Result;
-                //    o.txhBalance = (Convert.ToDecimal(GetAccount.Balance) / 1000000M).ToString("#.##", CultureInfo.InvariantCulture);
-                //    o.percentage = (Convert.ToDecimal(o.txhBalance)/100000000000M).ToString("P", CultureInfo.InvariantCulture);
-
-                //}
-                //string st = JsonConvert.SerializeObject(result, Formatting.Indented);
-                //dt.Rows[0].SetField(2, st);
-
-                //dt.AcceptChanges();
-
                 return JsonConvert.SerializeObject(dt, Formatting.Indented);
             }
             catch (Exception ex)
