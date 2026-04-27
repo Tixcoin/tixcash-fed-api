@@ -453,9 +453,9 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "HomePageStats failed");
             }
             return new { };
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetContractsCount", Name = "GetContractsCount")]
@@ -474,9 +474,9 @@ namespace dataAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "GetContractsCount failed");
             }
             return new { };
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("Search", Name = "Search")]
