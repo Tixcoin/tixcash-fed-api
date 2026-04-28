@@ -60,9 +60,6 @@ namespace dataAPI.Controllers
             _options = options;
             _tronClient = tronClient;
             var channel = channelClient.GetProtocol();
-
-            //GetTransaction("11091c08336ed747ae03c26175d32c90e803ca53a2d74994258d4a135048313c");
-            //latestblock();
         }
 
         [HttpGet("GetWeatherForecast", Name = "GetWeatherForecast")]
