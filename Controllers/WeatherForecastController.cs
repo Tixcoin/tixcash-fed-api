@@ -117,7 +117,6 @@ namespace dataAPI.Controllers
                 }
             }
             return "";
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetAddressDetails", Name = "GetAddressDetails")]
@@ -179,7 +178,6 @@ namespace dataAPI.Controllers
 
             }
 
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetContractList", Name = "GetContractList")]
@@ -194,7 +192,6 @@ namespace dataAPI.Controllers
             {
                 return new { };
             }
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetAccounts", Name = "GetAccounts")]
@@ -210,7 +207,6 @@ namespace dataAPI.Controllers
             {
                 return new { };
             }
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetTokens", Name = "GetTokens")]
@@ -225,7 +221,6 @@ namespace dataAPI.Controllers
             {
                 return new { };
             }
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetContractByAddress", Name = "GetContractByAddress")]
@@ -242,7 +237,6 @@ namespace dataAPI.Controllers
             {
                 return new { };
             }
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("GetContractDetails", Name = "GetContractDetails")]
@@ -327,7 +321,6 @@ namespace dataAPI.Controllers
 
             }
 
-            //var res = Task.Run(async () => await wallet.GetNowBlock2Async(new EmptyMessage())).Result;
         }
 
         [HttpGet("ReadContract", Name = "ReadContract")]
@@ -624,8 +617,6 @@ namespace dataAPI.Controllers
                     txnTransferFunctions.AddRange(t.transfers);
                     t.transfers.Clear();
                 }
-                //var res = Task.Run(async () => await wallet.GetBlockByNumAsync(new NumberMessage() { Num = block })).Result;
-                // if (GetAccount.Address.Count() == 0) throw new Exception("invalid address");
                 return new
                 {
                     data = new
@@ -759,8 +750,6 @@ namespace dataAPI.Controllers
 
                     transactionDatas.Add(t);
                 }
-                //var res = Task.Run(async () => await wallet.GetBlockByNumAsync(new NumberMessage() { Num = block })).Result;
-                // if (GetAccount.Address.Count() == 0) throw new Exception("invalid address");
                 return new
                 {
                     data = new
