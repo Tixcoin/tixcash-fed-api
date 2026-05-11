@@ -1,0 +1,26 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+# NuGet
+packages/
+*.nupkg
+
+# dotnet publish
+publish/
+
+# Environment & secrets
+appsettings.*.json
+!appsettings.json
+.env
+
+# OS
+.DS_Store
+Thumbs.db
